@@ -10,16 +10,16 @@ using Microsoft.AspNetCore.Authorization;
 namespace apiUniversidade.Controllers
 {
     [Authorize(AuthenticationSchemes = "Bearer")]
-    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
     [ApiController]
     [Route("api/v{version:apiVersion}/aluno")]
     
-    public class AlunoController : ControllerBase 
+    public class AlunoControllerV2 : ControllerBase 
     {
          private readonly ILogger<AlunoController> _logger;
         private readonly apiUniversidadeContext _context;
         
-        public AlunoController(ILogger<AlunoController> logger, apiUniversidadeContext context)
+        public AlunoControllerV2(ILogger<AlunoController> logger, apiUniversidadeContext context)
         {
             _logger = logger;
             _context = context;
