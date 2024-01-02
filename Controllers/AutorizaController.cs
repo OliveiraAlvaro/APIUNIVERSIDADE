@@ -14,6 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 namespace apiUniversidade.Controllers;
 
 [ApiController]
+[Route("[controller]")]
 public class AutorizaController : ControllerBase
 {
     private readonly UserManager<IdentityUser> _userManager;
