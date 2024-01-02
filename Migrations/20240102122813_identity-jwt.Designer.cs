@@ -12,7 +12,7 @@ using apiUniversidade.Context;
 namespace apiUniversidade.Migrations
 {
     [DbContext(typeof(apiUniversidadeContext))]
-    [Migration("20231128140849_identity-jwt")]
+    [Migration("20240102122813_identity-jwt")]
     partial class identityjwt
     {
         /// <inheritdoc />
